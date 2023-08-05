@@ -22,7 +22,8 @@
                     </form>
                 </div>
             @endforeach
-        </div><div class='paginate'>{{ $posts->links() }} </div>
+        </div>
+        <div class='paginate'>{{ $posts->links() }} </div>
         <script>
         function deletePost(id) {
             'use strict'
