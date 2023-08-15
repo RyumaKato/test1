@@ -20,6 +20,18 @@
                     </form>
                 </div>
             @endforeach
+            @foreach($questions as $question)
+                <div>{{ $question['title'] }}</div>
+            @endforeach
+                <div>
+            @foreach($questions as $question)
+                <div>
+                    <a href="https://teratail.com/questions/{{ $question['id'] }}">
+                        {{ $question['title'] }}
+                    </a>
+                </div>
+            @endforeach
+    </div>
         </div>
         <script>
             function deletePost(id) {
